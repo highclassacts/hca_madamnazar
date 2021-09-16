@@ -13,8 +13,6 @@ local Keys = {
 	["LEFT"] = 174, ["RIGHT"] = 175, ["TOP"] = 27, ["DOWN"] = 173,
   }
 
-
-
 RegisterNetEvent('esx:playerLoaded')
 AddEventHandler('esx:playerLoaded', function(xPlayer)
   PlayerData = xPlayer
@@ -39,6 +37,13 @@ function Draw3DText(x, y, z, text, scale)
     -- DrawRect(_x, _y + 0.0250, 0.095 + factor, 0.06, 41, 11, 41, 100)
 end
 
+function letsPlayAnim(anim)
+    RequestAnimDict(anim)
+    while not HasAnimDictLoaded(anim) do
+     Citizen.Wait(5)
+    end
+end
+
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(5)
@@ -49,9 +54,11 @@ Citizen.CreateThread(function()
     Draw3DText(Config.MadamNazar.x, Config.MadamNazar.y, Config.MadamNazar.z, "~w~[~g~E~w~] Ask for a fortune from Madam Nazar", 0.80)
     if GetDistanceBetweenCoords(coords, Config.MadamNazar, true) < 0.5 then
     if ( IsControlJustPressed( 1, Config.MenuKey ) ) then
+      letsPlayAnim('anim_casino_a@amb@casino@games@arcadecabinet@maleright')
+      TaskPlayAnim(GetPlayerPed(PlayerId()), 'anim_casino_a@amb@casino@games@arcadecabinet@maleright', 'insert_coins', 1.0, -1, 5000, 0, 0, 0, 0, 0)
+      Citizen.Wait(4000)
       TriggerServerEvent('MadamNazarr')
-      Citizen.Wait(5000)
-
+      Citizen.Wait(1000)
 end
 end
 end
