@@ -9,7 +9,7 @@ I use https://forum.cfx.re/t/the-diamond-casino-heist-arcade-interiors/917315 fo
 
 ACKNOWLEDGEMENTS:
 
-This code was inspired by and is based off of diize_laundring by freddan11 - https://github.com/Diize/diize_moneylaundring
+This code was inspired by and is based off of diize_moneylaundring by freddan11 - https://github.com/Diize/diize_moneylaundring
 
 https://forum.cfx.re/t/release-free-esx-diize-moneylaundring/4749438
 
