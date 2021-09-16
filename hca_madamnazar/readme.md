@@ -1,4 +1,5 @@
 REQUIREMENTS:
+
 ESX legacy
 
 mythic_notify- https://github.com/JayMontana36/mythic_notify
@@ -7,11 +8,13 @@ I use https://forum.cfx.re/t/the-diamond-casino-heist-arcade-interiors/917315 fo
 
 
 ACKNOWLEDGEMENTS:
+
 This code was inspired by and is based off of diize_laundring by freddan11 - https://github.com/Diize/diize_moneylaundring
 
 https://forum.cfx.re/t/release-free-esx-diize-moneylaundring/4749438
 
 
 USAGE:
+
 If you want to repurpose this code for something else or use it for your server, you are free to do so. If you're repurposing it, I would ask that you give me and freddan11 an acknowledgement.
 
